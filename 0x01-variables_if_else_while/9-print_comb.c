@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	int x;
+	int x = 1;
 
 	putchar('0');
-	while (x < 10)
+	while (x <= 9)
 	{
 		putchar(',');
 		putchar(' ');
