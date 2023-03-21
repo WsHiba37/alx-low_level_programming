@@ -10,6 +10,6 @@ int main(void)
 	/* This variable holds the string _putchar */
 	char str[] = "_putchar";
 
-	print_putchar (str);
+	_putchar (str);
 	return (0);
 }

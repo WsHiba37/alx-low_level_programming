@@ -1,4 +1,4 @@
 #ifndef MAIN_H
 #define MAIN_H
-int print_putchar(char str[]);
+int _putchar(char str[]);
 #endif

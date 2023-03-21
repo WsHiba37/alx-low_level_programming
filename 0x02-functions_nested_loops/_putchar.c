@@ -8,7 +8,7 @@
  *
  * Return: 0 (Success)
  */
-int print_putchar(char str[])
+int _putchar(char str[])
 {
 	printf("%s\n", str);
 	return (0);
