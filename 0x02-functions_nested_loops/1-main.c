@@ -2,16 +2,12 @@
 #include <unistd.h>
 
 /**
- * print_alphabet - prints all the alphabets in lowercase
+ * main - Entry point
  *
+ * Return: 0 Always (Success)
  */
-void print_alphabet(void)
+int main(void)
 {
-        int i;
-
-        for (i = 97; i <= 122; i++)
-        {
-                _putchar(i);
-        }
-        _putchar('\n');
+	print_alphabet();
+	return (0);
 }
