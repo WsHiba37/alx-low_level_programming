@@ -1,15 +1,7 @@
-#include <stdio.h>
 #include "main.h"
+#include <unistd.h>
 
-/**
- * print_putchar - prints a string to stdout
- *
- * @str: the string to print
- *
- * Return: 0 (Success)
- */
-int _putchar(char str[])
+int _putchar (char c)
 {
-	printf("%s\n", str);
-	return (0);
+	return (write(1, &c, 1));
 }

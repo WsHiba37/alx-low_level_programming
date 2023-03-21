@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * main - a program that prints _putchar followed by a newline
@@ -7,9 +7,16 @@
  */
 int main(void)
 {
-	/* This variable holds the string _putchar */
-	char str[] = "_putchar";
+	int _putchar(char c);
 
-	_putchar (str);
+	_putchar ('_');
+	_putchar ('p');
+	_putchar ('u');
+	_putchar ('t');
+	_putchar ('c');
+	_putchar ('h');
+	_putchar ('a');
+	_putchar ('r');
+	_putchar ('\n');
 	return (0);
 }
