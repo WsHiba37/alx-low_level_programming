@@ -20,11 +20,14 @@ void times_table(void)
 	{
 		for (y = 0; y <= 9; y++)
 		{
-			printf("%d", x * y);
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			printf("%2d", x * y);
+			if (y < 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
