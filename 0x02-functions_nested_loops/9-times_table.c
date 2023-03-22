@@ -21,7 +21,7 @@ void times_table(void)
 		for (y = 0; y <= 9; y++)
 		{
 			printf("%2d", x * y);
-			if (y < 9)
+			if (y != 9)
 			{
 				putchar(',');
 				putchar(' ');
