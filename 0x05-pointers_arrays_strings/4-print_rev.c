@@ -3,15 +3,17 @@
 
 /**
  * print_rev - a function that prints a string in reverse
- * s: parameter checked
+ * @s: parameter checked
+ * @len
+ * @i
  * Return: void
  */
 void print_rev(char *s)
 {
 	int len, i;
-	len = 0;
 
-	while (*(s+len) != '\0')
+	len = 0;
+	while (*(s + len) != '\0')
 	{
 		len++;
 	}
@@ -19,6 +21,6 @@ void print_rev(char *s)
 	{
 		_putchar(*(s + i));
 	}
-	
+
 	_putchar('\n');
 }
