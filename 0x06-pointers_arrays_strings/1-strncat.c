@@ -5,22 +5,20 @@
  * @dest: destination
  * @src: source
  * @n: number of bytes from src
- * Return: dest
+ * Return: string concatenated
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	while (*dest != '\0')
+	int dest_len = 0;
+	int i;
+
+	for (i = 0; dest[i] != '\0'; i++)
 	{
-		dest++;
-		if (*dest == '\0')
-		{
-			while (*src != src[n])
-			{
-				src++;
-			}
-			*dest = *src;
-		}
+		dest_len++;
+	}
+	for (i = 0; i < n && src[i] != '\0'; i++)
+	{
+		dest[dest_len + i] = src[i];
 	}
 	return (dest);
 }
-
