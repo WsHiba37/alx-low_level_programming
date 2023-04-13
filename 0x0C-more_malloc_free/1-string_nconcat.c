@@ -45,7 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	str[s1_len + j] = '\0';
 	return (str);
-	free(str);
 }
 
 
