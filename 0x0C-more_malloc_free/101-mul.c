@@ -39,9 +39,14 @@ int main(int argc, char *argv[])
 	ptr = malloc(2 * sizeof(int));
 	if (ptr == NULL)
 		exit(98);
-	*ptr = num1 * num2;
-	printf("%d\n", *ptr);
-	free(ptr);
-	return (0);
+	if (num1 > 0 && num2 > 0)
+	{
+		*ptr = num1 * num2;
+		printf("%d\n", *ptr);
+		free(ptr);
+		return (0);
+	}
+	printf("Error\n");
+	exit(98);
 }
 
